@@ -24,4 +24,4 @@ npm run dev
 
 There are a couple of technologies that I have planned to incorporate into this project. As with each, there are various different types in which we can use. As I review them and finally settle on each, they will appear in the list below.
 
-* (Artoym JS)[https://github.com/sdkcarlos/artyom.js] HTML5 Voice Control
+* [Artoym JS](https://github.com/sdkcarlos/artyom.js) HTML5 Voice Control
