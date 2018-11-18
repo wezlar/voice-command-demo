@@ -1,6 +1,6 @@
 {
-  "name": "ir15",
-  "version": "1.0.0",
+  "name": "iris",
+  "version": "0.1.0",
   "description": "Iris AI system for 15gifts",
   "private": true,
   "devDependencies": {
@@ -8,22 +8,29 @@
     "react-scripts": "^1.1.4"
   },
   "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
     "autoprefixer-stylus": "0.14.0",
     "prop-types": "^15.6.0",
-    "react": "^16.3.0-alpha.1",
-    "react-dom": "^16.3.0-alpha.1",
-    "react-router-dom": "^4.2.2",
     "react-transition-group": "^2.2.1",
     "serve": "^10.0.2",
     "stylus": "0.54.5"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve --single ./build",
-    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
-  }
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
